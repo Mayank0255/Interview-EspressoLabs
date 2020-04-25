@@ -1,0 +1,223 @@
+body{
+  background-color: rgba(0,0,0,0.05);
+}
+
+.invoice-viewer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0,0,0,0.5);
+
+  .invoice-panel {
+    margin: 30px 0;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.05), 0 20px 48px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+
+    .address-sec{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .brandLogo {
+        display: flex;
+        flex-direction: column;
+
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .address-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+      }
+    }
+
+    .information {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      font-size: 14px;
+
+      .client-info{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 15px;
+
+        .client-head{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .client-name{
+          font-weight: 600;
+        }
+      }
+      .order-info{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 15px;
+
+        .order-head{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        & span{
+          margin-right: 20px;
+          font-weight: 500;
+        }
+
+        .info-status{
+          margin: 2px 0;
+
+          .yellow-status{
+            padding:2px 4px;
+            background-color: #ffff50;
+          }
+
+          .red-status{
+            padding: 4px;
+            background-color: red;
+          }
+        }
+      }
+      .invoice-info{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 15px;
+
+        .invoice_num > h5{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .amountDue{
+          color: #349feb;
+        }
+      }
+    }
+
+    .items-box{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .items-label{
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        padding: 8px;
+
+        p{
+          width: 10%;
+          text-align: center;
+        }
+
+        p:nth-child(1){
+          text-align: left;
+          width: 65%;
+        }
+      }
+
+      .items{
+        display: flex;
+        flex-direction: column;
+
+        .item{
+          display: flex;
+          flex-direction: row;
+          border-top: 1px solid rgba(0,0,0,0.2);
+          padding: 8px 8px 20px 8px;
+
+          .items-desc{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+          }
+          .items-quan{
+            text-align: center;
+            width: 10%;
+          }
+          .items-amt{
+            text-align: center;
+            width: 10%;
+          }
+          .items-total{
+            text-align: center;
+            width: 10%;
+          }
+        }
+      }
+    }
+
+    .total-box{
+      display: flex;
+      justify-content: flex-end;
+      background-color: rgba(0,0,0,0.06);
+      margin-bottom: 15px;
+      padding: 20px;
+
+      .total-info{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+
+        span{
+          margin-bottom: 12px;
+
+          h4{
+            display: inline;
+            margin-right: 8px;
+            color: rgba(0,0,0,0.4);
+          }
+        }
+
+        .total {
+          font-weight: 500;
+          font-size: 16px;
+          color: #349feb;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .guidelines {
+
+      span{
+        font-size: 13px;
+
+      }
+    }
+  }
+
+  .actions-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+
+
+      button{
+        padding: 8px 14px;
+        background-color: #349feb;
+        border: 1px solid;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+  }
+}
